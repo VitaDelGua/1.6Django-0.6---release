@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+    {% if author %}
+        <p>Имя автора сайта - {{ author }}</p>
+    {% else %}
+        <p>Автор сайта не указан</p>
+    {% endif %}
+    <p> Количество страниц на сайте - {{ count_pages }}</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'time' %}">Время</a></li>
+            <li><a href="{% url 'calculate' %}">Калькулятор</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

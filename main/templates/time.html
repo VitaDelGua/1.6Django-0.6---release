@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Время</title>
+</head>
+<body>
+   <p> Текущее время - {{ date.hour }}:{{ date.minute }}:{{ date.second }}</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Главная страница</a></li>
+            <li><a href="{% url 'calculate' %}">Калькулятор</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
